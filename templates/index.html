@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,35 +18,22 @@
 <script src="js/bootstrap.min.js"></script>
 
 <!--자바스크립트파일 호출-->
-<script type="text/javascript"  src = "./js_v01.js"> </script>
+<script type="text/javascript" src="../static/js_v01.js"></script>
+
+<!--style.css-->
+<link rel="stylesheet" type="text/css" href="../static/style.css"/>
 
 
-<style>
-    .total_wrap {
-        display: flex;
-        font-family: "맑은 고딕 Semilight";
-    }
-
-    .wrap {
-        margin: 0 auto;
-    }
-
-    .txt {
-        font-family: "맑은 고딕 Semilight";
-    }
-
-</style>
 <body>
-
-
 <div class="total_wrap">
     <div class="wrap">
-
         <p>글쓰기</p>
-        <textarea class="form-control txt" rows="1" cols="60" id="main_title" onkeyup="letterCalc();letterTrim();if_changed();save()"
+        <textarea class="form-control txt" rows="1" cols="60" id="main_title"
+                  onkeyup="letterCalc();letterTrim();if_changed();save()"
                   autocomplete="off"></textarea>
         <br>
-        <textarea class="form-control txt" rows="10" cols="60" id="main_text" onkeyup="letterCalc();letterTrim();if_changed();save()"
+        <textarea class="form-control txt" rows="10" cols="60" id="main_text"
+                  onkeyup="letterCalc();letterTrim();if_changed();save()"
                   autocomplete="off"></textarea>
         <br>
         <span>글자수:</span>
@@ -60,7 +48,7 @@
         <span id="lc">0</span>
         <span>자</span>
         <button id="button_num_reset" onclick="num_reset()">리셋</button>
-        <button id="button_reset" onclick="page_reset()">지우기(작동을하지않는다..)</button>
+        <button id="button_reset" onclick="page_reset()">지우기(작동..하는데타이핑수까지 지워짐)</button>
     </div>
 </div>
 

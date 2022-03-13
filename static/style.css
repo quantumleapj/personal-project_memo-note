@@ -1,0 +1,13 @@
+
+.total_wrap {
+    display: flex;
+    font-family: "맑은 고딕 Semilight";
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.txt {
+    font-family: "맑은 고딕 Semilight";
+}
